@@ -21,6 +21,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation libs.guava
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '[3.22.0,)'
 }
 
 jar{
@@ -38,5 +39,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'arnold_enum_type.ArnoldMain'
+    mainClass = 'edu.badpals.arnold.ArnoldMain'
 }
