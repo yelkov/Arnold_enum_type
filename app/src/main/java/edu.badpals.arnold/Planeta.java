@@ -35,8 +35,10 @@ public enum Planeta {
         return G * this.masa / (this.radio*this.radio);
     }
     public double pesoSuperficie(double pesoHumano) {
-        Double masaHumano = pesoHumano / Planeta.EARTH.gravedadSuperficie();
-        return masaHumano * this.gravedadSuperficie();
+        return masaHumano(pesoHumano) * this.gravedadSuperficie();
+    }
+    private Double masaHumano(double peso) {
+        return peso / Planeta.EARTH.gravedadSuperficie();
     }
 
     public static EnumSet<Planeta> getPlanetasTerrestres() {
