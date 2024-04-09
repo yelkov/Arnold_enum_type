@@ -85,7 +85,7 @@ public class ArnoldEnumTypeTest {
 		}
 	}
 
-/*	@Test
+	@Test
 	public void ArrayGigantesGaseosos() {
 
 		String[] gigantesGaseosos = new String[4];
@@ -103,5 +103,5 @@ public class ArnoldEnumTypeTest {
 		for (Planeta planeta : Planeta.getGigantesGaseosos()) {
 			assertThat(planeta.name()).isIn(gigantesGaseosos);
 		}
-	}*/
+	}
 }

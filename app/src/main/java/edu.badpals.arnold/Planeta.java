@@ -43,5 +43,9 @@ public enum Planeta {
          EnumSet<Planeta> planetasTerrestres = EnumSet.range(Planeta.MERCURY,Planeta.MARS);
          return planetasTerrestres;
     }
+    public static EnumSet<Planeta> getGigantesGaseosos() {
+        EnumSet<Planeta> planetasGaseosos = EnumSet.range(Planeta.JUPITER,Planeta.URANUS);
+        return planetasGaseosos;
+    }
 }
 
