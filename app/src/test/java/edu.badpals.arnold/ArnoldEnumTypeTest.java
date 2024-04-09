@@ -1,6 +1,7 @@
 package edu.badpals.arnold;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -47,7 +48,7 @@ public class ArnoldEnumTypeTest {
 		Planeta planeta = Planeta.MERCURY;
 		assertThat(planeta.getRadio()).isEqualTo(2.4397e+6);
 	}
-/*
+
 
 	@Test
 	public void PlanetaNamesIteratorTest() {
@@ -55,16 +56,16 @@ public class ArnoldEnumTypeTest {
 			assertThat(planeta.name()).isIn(planetas);
 		}
 	}
-*/
 
-/*
+
+
 	@Test
 	public void PesoSuperficieMercurioTest() {
 		Planeta planeta = Planeta.MERCURY;
 		double pesoHumano = 175;
 		assertEquals(66.107583, planeta.pesoSuperficie(pesoHumano), 0.001);
 	}
-*/
+
 /*	@Test
 	public void ArrayPlanetasTerrestresTest() {
 

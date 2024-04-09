@@ -13,6 +13,7 @@ public enum Planeta {
 
     private Double masa = 0d;
     private Double radio = 0d;
+    public static Double G = 6.67300E-11;
 
     private Planeta(Double masa, Double radio) {
         this.masa = masa;
@@ -25,6 +26,15 @@ public enum Planeta {
 
     public Double getRadio() {
         return radio;
+    }
+
+
+    private Double gravedadSuperficie(){
+        return G * this.masa / (this.radio*this.radio);
+    }
+    public double pesoSuperficie(double pesoHumano) {
+        Double masaHumano = pesoHumano / Planeta.EARTH.gravedadSuperficie();
+        return masaHumano * this.gravedadSuperficie();
     }
 }
 
